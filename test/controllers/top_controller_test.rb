@@ -1,0 +1,18 @@
+require "test_helper"
+
+class TopControllerTest < ActionDispatch::IntegrationTest
+  test "should get main" do
+    get top_main_url
+    assert_response :success
+  end
+
+  test "should get login" do
+    get top_login_url
+    assert_response :success
+  end
+
+  test "should get logoutd" do
+    get top_logoutd_url
+    assert_response :success
+  end
+end
